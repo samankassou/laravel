@@ -1,7 +1,7 @@
 <?php
 
+use App\Http\Controllers\DescController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Properties;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +15,6 @@ use App\Http\Controllers\Properties;
 */
 
 
-Route::get('/', [Properties::class, 'index']);
-
-Route::get('/description', function () {
-    return view('about.description');
-});
+Route::get('/', [DescController::class, 'index']);
+Route::get('/about', [DescController::class, 'about']);
+Route::get('/contact', [DescController::class, 'contact']);

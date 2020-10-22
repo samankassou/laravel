@@ -2,13 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class DescController extends Controller
 {
-    public function bonjour()
+    public function index()
     {
-        return 'Bonjour tout le monde';
+        return view('about.index');
+    }
+
+    public function about()
+    {
+        return view('about.about');
+    }
+
+    public function contact()
+    {
+        return view('about.contact');
     }
 }
