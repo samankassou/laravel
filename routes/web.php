@@ -18,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [DescController::class, 'index']);
 Route::get('/about', [DescController::class, 'about']);
 Route::get('/contact', [DescController::class, 'contact']);
+
+Route::resource('posts', 'PostsController');
