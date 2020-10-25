@@ -9,6 +9,9 @@
             <li class="nav-item {{ (request()->is('/')) ? 'active' : '' }}">
                 <a class="nav-link" href="/">Accueil</a>
             </li>
+            <li class="nav-item {{ (request()->is('posts*')) ? 'active' : '' }}">
+                <a class="nav-link" href="/posts">Blog</a>
+            </li>
             <li class="nav-item {{ (request()->is('about')) ? 'active' : '' }}">
                 <a class="nav-link" href="/about">A propos</a>
             </li>

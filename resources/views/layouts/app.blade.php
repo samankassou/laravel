@@ -11,7 +11,8 @@
 </head>
 <body>
 @include('inc.navbar')
-<div class="container">
+<div class="container mt-2">
+    @include('inc.errorsuccess')
     @yield('content')
 </div>
 </body>
